@@ -13,6 +13,8 @@ class AppDelegate
 
     @status_menu.addItem createMenuItem("About #{@app_name}", 'orderFrontStandardAboutPanel:')
     @status_menu.addItem createMenuItem("Custom Action", 'pressAction')
+    @status_menu.addItem createMenuItem("Eject Three Disks", 'ejectThreeDisks')
+    @status_menu.addItem createMenuItem("Say Droid", 'sayDroid')
     @status_menu.addItem createMenuItem("Quit", 'terminate:')
   end
 
@@ -25,5 +27,13 @@ class AppDelegate
     alert.setMessageText "Action triggered from status bar menu"
     alert.addButtonWithTitle "OK"
     alert.runModal
+  end
+
+  def sayDroid
+    %x(say -v cello droid)
+  end
+
+  def ejectThreeDisks
+    %x(diskutil eject SiiGBlack)
   end
 end
