@@ -34,6 +34,7 @@ class AppDelegate
   end
 
   def ejectThreeDisks
+    alert = NSAlert.alloc.init
     response = %x(/usr/sbin/diskutil eject Ultra3TB)
     alert.setMessageText response
     alert.addButtonWithTitle "OK"
