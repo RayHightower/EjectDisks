@@ -1,0 +1,19 @@
+EjectDisks
+===
+
+Experimental RubyMotion program written for OS X.
+
+Purpose: 
+
+* To eject the three external USB disks that I use for Time Machine backup on my MacBook Pro.
+* To play with RubyMotion for OS X.
+* To make users smile when they choose the 'Say Something' or 'Sing' options on the menu.
+
+Thanks to...
+==
+Laurent Sansonetti and Hip Byte for adding OS X as a target for RubyMotion.
+Elliott Draper for creating the `osx-status-bar-app-template` gem.
+
+
+
+
