@@ -36,8 +36,8 @@ class AppDelegate
 
   def singSomething
     %x(say -v cello da da da da da da da da da da da da da da da da da da da da da da da da da da)
-    
   end
+
   def ejectThreeDisks
     alert = NSAlert.alloc.init
     response = %x(/usr/sbin/diskutil eject SiiGBlack) + "\n"
