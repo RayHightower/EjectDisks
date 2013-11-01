@@ -7,7 +7,7 @@ Purpose:
 
 * To eject the three external USB disks that I use for Time Machine backup on my MacBook Pro.
 * To play with RubyMotion for OS X.
-* To make users smile when they choose the 'Say Something' or 'Sing' options on the menu.
+* To make users smile when they choose one of the non-business options on the menu.
 
 Thanks to...
 ==
