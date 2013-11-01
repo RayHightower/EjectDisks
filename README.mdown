@@ -11,8 +11,9 @@ Purpose:
 
 Thanks to...
 ==
-Laurent Sansonetti and Hip Byte for adding OS X as a target for RubyMotion.
-Elliott Draper for creating the `osx-status-bar-app-template` gem.
+
+* Laurent Sansonetti and Hip Byte for adding OS X as a target for RubyMotion.
+* Elliott Draper for creating the `osx-status-bar-app-template` gem.
 
 
 
