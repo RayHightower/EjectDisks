@@ -34,6 +34,9 @@ class AppDelegate
   end
 
   def ejectThreeDisks
-    %x(/usr/sbin/diskutil eject SiiGBlack)
+    response = %x(/usr/sbin/diskutil eject Ultra3TB)
+    alert.setMessageText response
+    alert.addButtonWithTitle "OK"
+    alert.runModal
   end
 end
