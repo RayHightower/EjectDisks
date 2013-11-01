@@ -14,7 +14,7 @@ class AppDelegate
     @status_menu.addItem createMenuItem("About #{@app_name}", 'orderFrontStandardAboutPanel:')
     @status_menu.addItem createMenuItem("Custom Action", 'pressAction')
     @status_menu.addItem createMenuItem("Eject Three Disks", 'ejectThreeDisks')
-    @status_menu.addItem createMenuItem("Say Droid", 'sayDroid')
+    @status_menu.addItem createMenuItem("Say Something", 'sayDroid')
     @status_menu.addItem createMenuItem("Quit", 'terminate:')
   end
 
