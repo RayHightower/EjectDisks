@@ -11,7 +11,7 @@ extern "C" {
     void rb_define_global_const(const char *, void *);
     void rb_rb2oc_exc_handler(void);
     void rb_exit(int);
-void MREP_A39F343046BC493FB6EF05FA1FC2213C(void *, void *);
+void MREP_A6A2567634ED4CA88C03AE1E39B475E6(void *, void *);
 }
 
 extern "C"
@@ -32,7 +32,7 @@ RubyMotionInit(int argc, char **argv)
 	    void *self = rb_vm_top_self();
 rb_define_global_const("RUBYMOTION_ENV", @"development");
 rb_define_global_const("RUBYMOTION_VERSION", @"2.11");
-MREP_A39F343046BC493FB6EF05FA1FC2213C(self, 0);
+MREP_A6A2567634ED4CA88C03AE1E39B475E6(self, 0);
 #if !__LP64__
 	}
 	catch (...) {

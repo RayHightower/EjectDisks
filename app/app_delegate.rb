@@ -34,6 +34,6 @@ class AppDelegate
   end
 
   def ejectThreeDisks
-    %x(diskutil eject SiiGBlack)
+    %x(/usr/sbin/diskutil eject SiiGBlack)
   end
 end
