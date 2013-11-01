@@ -40,7 +40,11 @@ class AppDelegate
   end
 
   def greetings
-    %x(say -v cello Greetings to the members of Chippewa Valley Code Camp)
+    %x(say -v cello Greetings to the members of Chippewa Valley Code Camp &)
+    alert = NSAlert.alloc.init
+    alert.setMessageText "Greetings to the members of Chippewa Valley Code Camp!"
+    alert.addButtonWithTitle "OK"
+    alert.runModal
   end
 
   def ejectThreeDisks
