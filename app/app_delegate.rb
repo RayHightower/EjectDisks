@@ -35,7 +35,9 @@ class AppDelegate
 
   def ejectThreeDisks
     alert = NSAlert.alloc.init
-    response = %x(/usr/sbin/diskutil eject Ultra3TB)
+    response = %x(/usr/sbin/diskutil eject SiiGBlack) + "\n"
+    response += %x(/usr/sbin/diskutil eject Ultra3TB) + "\n"
+    response += %x(/usr/sbin/diskutil eject WDSilver) + "\n"
     alert.setMessageText response
     alert.addButtonWithTitle "OK"
     alert.runModal
