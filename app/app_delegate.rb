@@ -15,6 +15,7 @@ class AppDelegate
     @status_menu.addItem createMenuItem("Custom Action", 'pressAction')
     @status_menu.addItem createMenuItem("Eject Three Disks", 'ejectThreeDisks')
     @status_menu.addItem createMenuItem("Say Something", 'sayDroid')
+    @status_menu.addItem createMenuItem("Sing", 'singSomething')
     @status_menu.addItem createMenuItem("Quit", 'terminate:')
   end
 
@@ -33,6 +34,10 @@ class AppDelegate
     %x(say -v cello droid)
   end
 
+  def singSomething
+    %x(say -v cello da da da da da da da da da da da da da da da da da da da da da da da da da da)
+    
+  end
   def ejectThreeDisks
     alert = NSAlert.alloc.init
     response = %x(/usr/sbin/diskutil eject SiiGBlack) + "\n"
