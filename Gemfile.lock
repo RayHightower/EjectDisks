@@ -1,10 +1,12 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    osx-status-bar-app-template (0.0.1)
     rake (10.1.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  osx-status-bar-app-template
   rake
