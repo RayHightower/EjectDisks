@@ -1,6 +1,7 @@
 .dat*
 .repl_history
 build
+build/*
 tags
 app/pixate_code.rb
 resources/*.nib
