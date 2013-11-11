@@ -40,7 +40,7 @@ class AppDelegate
   end
 
   def greetings
-    %x(say -v cello Greetings to the members of Chippewa Valley Code Camp &)
+    %x(say -v cello Greetings to the members of the Chicago RubyMotion User Group &)
     alert = NSAlert.alloc.init
     alert.setMessageText "Greetings to the members of the Chicago RubyMotion User Group!"
     alert.addButtonWithTitle "OK"
