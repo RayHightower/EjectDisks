@@ -6,7 +6,7 @@ class AppDelegate
 
     @status_menu = NSMenu.new
 
-    @status_item = NSStatusBar.systemStatusBar.statusItemWithLength(NSVariableStatusItemLength).init
+    @status_item = NSStatusBar.systemStatusBar.statusItemWithLength(NSVariableStatusItemLength)
     @status_item.setMenu(@status_menu)
     @status_item.setHighlightMode(true)
     @status_item.setTitle(@app_name)
