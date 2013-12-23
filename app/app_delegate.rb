@@ -3,15 +3,16 @@ class AppDelegate
 
   def applicationDidFinishLaunching(notification)
     @app_name = NSBundle.mainBundle.infoDictionary['CFBundleDisplayName']
-
     @status_menu = NSMenu.new
+    setup_menu
+    add_menu_items
+  end
 
+  def setup_menu
     @status_item = NSStatusBar.systemStatusBar.statusItemWithLength(NSVariableStatusItemLength)
     @status_item.setMenu(@status_menu)
     @status_item.setHighlightMode(true)
     @status_item.setTitle(@app_name)
-
-    add_menu_items
   end
 
   def add_menu_items
