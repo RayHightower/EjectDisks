@@ -10,10 +10,12 @@ class AppDelegate
     @status_item.setMenu(@status_menu)
     @status_item.setHighlightMode(true)
     @status_item.setTitle(@app_name)
+  end
 
+  def add_menu_items
     @status_menu.addItem createMenuItem("About #{@app_name}", 'orderFrontStandardAboutPanel:')
     @status_menu.addItem createMenuItem("Custom Action", 'pressAction')
-    @status_menu.addItem createMenuItem("Eject Three Disks", 'ejectThreeDisks')
+    @status_menu.addItem createMenuItem("** Eject Three Disks **", 'ejectThreeDisks')
     @status_menu.addItem createMenuItem("Say Something", 'sayDroid')
     @status_menu.addItem createMenuItem("Sing", 'singSomething')
     @status_menu.addItem createMenuItem("Greetings", 'greetings')
