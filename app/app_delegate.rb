@@ -10,6 +10,8 @@ class AppDelegate
     @status_item.setMenu(@status_menu)
     @status_item.setHighlightMode(true)
     @status_item.setTitle(@app_name)
+
+    add_menu_items
   end
 
   def add_menu_items
