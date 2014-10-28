@@ -18,7 +18,7 @@ class AppDelegate
   def add_menu_items
     @status_menu.addItem createMenuItem("About #{@app_name}", 'orderFrontStandardAboutPanel:')
     @status_menu.addItem createMenuItem("Custom Action", 'pressAction')
-    @status_menu.addItem createMenuItem("** Eject Three Disks **", 'ejectThreeDisks')
+    @status_menu.addItem createMenuItem("** Eject Disks **", 'ejectDisks')
     @status_menu.addItem createMenuItem("Say Something", 'sayDroid')
     @status_menu.addItem createMenuItem("Sing", 'singSomething')
     @status_menu.addItem createMenuItem("Greetings", 'greetings')
@@ -52,11 +52,10 @@ class AppDelegate
     alert.runModal
   end
 
-  def ejectThreeDisks
+  def ejectDisks
     alert = NSAlert.alloc.init
     response = %x(/usr/sbin/diskutil eject SiiGBlack) + "\n"
     response += %x(/usr/sbin/diskutil eject Ultra3TB) + "\n"
-    response += %x(/usr/sbin/diskutil eject WDSilver) + "\n"
     alert.setMessageText response
     alert.addButtonWithTitle "OK"
     alert.runModal
